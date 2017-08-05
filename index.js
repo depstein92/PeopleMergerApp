@@ -5,7 +5,7 @@ const fileReader = require('./fileReader.js');
 
 
 
-fileReader.peopleOneReader('./people1.json').then(function(data) {
+fileReader.peopleOneReader('./people1.json').then(function(data) { //Killian, Koen, Ashlee
   let dataHandler = data.sort();
   fs.writeFile('sortPeopleList.txt', data, (err) => {
     if(err){
@@ -18,7 +18,7 @@ fileReader.peopleOneReader('./people1.json').then(function(data) {
 
 })
 
-fileReader.peopleTwoReader('./people2.json').then(function(data){
+fileReader.peopleTwoReader('./people2.json').then(function(data){ // "Sara", "Alex", "Loet", "Thirsa", "Inessa"
   let dataHandler = data.sort();
   fs.writeFile('sortPeopleList.txt', data, (err) => {
     if(err){
